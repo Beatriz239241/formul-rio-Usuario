@@ -1,0 +1,61 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fonte e cor de fundo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* fundo cinza escuro */
+    color: #fff; /* texto branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container para centralizar o formulário */
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+    background-color: #444; /* fundo mais claro do formulário */
+    border-radius: 8px;
+    border: 2px solid #f39c12; /* Borda dourada em torno do formulário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adicionando sombra para destacar */
+}
+
+/* Borda para os campos do formulário */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #555; /* fundo mais escuro nos campos */
+    border-radius: 4px;
+    border: 1px solid #f39c12; /* Borda dourada nos campos */
+    color: #fff; /* Texto branco nos campos */
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #e67e22; /* Borda dourada mais clara no foco */
+    outline: none;
+    background-color: #666; /* Muda o fundo para um tom mais claro ao focar */
+}
+
+/* Estilo do botão */
+button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    border: 2px solid #f39c12; /* Borda dourada no botão */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e67e22; /* Tom mais claro de dourado ao passar o mouse */
+    border-color: #e67e22; /* Ajuste da borda no hover */
+}
